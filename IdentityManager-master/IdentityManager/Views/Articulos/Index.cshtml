@@ -1,0 +1,41 @@
+﻿@inject Microsoft.AspNetCore.Authorization.IAuthorizationService Authoriation
+
+@{ ViewData["Title"] = "Home Page"; }
+
+@{ var isAdmin = await Authoriation.AuthorizeAsync(User, null, "Admin"); }
+
+<div class="text-center">
+    <h1 class="display-4 text-primary">Productos</h1>
+    <h2>Clothes.com ofrece los siguientes productos.</h2>
+</div>
+
+
+<html>
+<body>
+    <p class="text-center">
+
+
+        <img src="~/media/productos/1.jpg" width="192" height="118" />
+        <img src="~/media/productos/2.jpg" width="192" height="118" />
+        <img src="~/media/productos/3.jpg" width="192" height="118" />
+    </p>
+    <p class="text-center">
+        <img src="~/media/productos/4.jpg" width="192" height="118" />
+        <img src="~/media/productos/5.jpg" width="192" height="118" />
+        <img src="~/media/productos/6.jpg" width="192" height="118" />
+    </p>
+    <p class="text-center">
+        <img src="~/media/productos/7.jpg" width="192" height="118" />
+        <img src="~/media/productos/8.jpg" width="192" height="118" />
+        <img src="~/media/productos/9.jpg" width="192" height="118" />
+    </p>
+
+    <p class="text-center">
+
+        <img src="~/media/productos/10.jpg" width="192" height="118" />
+        <img src="~/media/productos/11.jpg" width="192" height="118" />
+        <img src="~/media/productos/12.jpg" width="192" height="118" />
+    </p>
+</body>
+</html>
+<h2> Este apartado aun esta en desarrollo</h2>
